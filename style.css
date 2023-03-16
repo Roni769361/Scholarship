@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(177, 209, 238);
+    color: #333;
+  }
+  
+
+.navbar{
+    background-color: rgba(9, 123, 238, 0.842) !important;
+    border-radius: 10px; /* Adjust the value to your desired level of rounding */
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+}
+
+.nav-link{
+    color: rgba(2, 2, 2, 0.952) !important;
+    background-color: rgba(6, 242, 250, 0.425) !important;
+    border-radius: 10px; /* Adjust the value to your desired level of rounding */
+    padding: 5px;
+    margin: 2px;
+}
+#introPart{
+    margin-top: 60px;
+}
+.SchoolNameAndAddress, h1{
+    line-height: normal;
+    color: rgb(27, 27, 27);
+    font-family: Georgia;
+    font-weight: bolder;
+    /* font-size: xx-large !important; */
+}
+
+.column{
+    background-color: rgb(255, 235, 205);
+}
+
+.content p.hidden {
+    display: none;
+}
+
+.text{
+    text-align: justify;
+}
+.regbtn{
+    text-align: center;
+}
+#button{
+    color: rebeccapurple;
+    text-align: center;
+    align-items: center;
+}
+#reg{
+    text-align: center;
+    padding: 2px;
+    margin: 5px;
+}
+
+@keyframes animateButton {
+    0% {
+      transform: scale(1);
+      background-color: red;
+    }
+    50% {
+      transform: scale(1.1);
+      background-color: green;
+    }
+    100% {
+      transform: scale(1);
+      background-color: blue;
+    }
+  }
+  
+  #button {
+    animation-name: animateButton;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
