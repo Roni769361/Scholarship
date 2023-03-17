@@ -14,7 +14,7 @@ body {
     border-radius: 10px; /* Adjust the value to your desired level of rounding */
     position: fixed;
     top: 0;
-    /* width: 100%; */
+    width: 98%;
 }
 
 .nav-link{
@@ -80,5 +80,20 @@ body {
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+  }
+  
+
+  .fCode {
+    position: relative;
+    padding-bottom: 56.25%; /* Set the aspect ratio (16:9) */
+    height: 0;
+  }
+  
+  .fCode iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   

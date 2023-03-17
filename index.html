@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container-fluid">
     <div id="navBar">
-        <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">School Logo</a>
@@ -32,15 +32,12 @@
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">All Data Show</a>
                       </li>
                     </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                   </div>
                 </div>
               </nav>
-        </div>
-    </div>
+      </div>
+  </div>
     
     <div id="introPart">
         <div class="container">
@@ -72,10 +69,13 @@ Sincerely, <br>
                         </p>
                     </div>
                 </div>
-                <div class="col regbtn">
+                <div class="col-md-6 regbtn">
                     <!-- <button id="button" class="btn border-2 border-secondary">Online Registration</button> -->
                     <a href="#reg"><button class="btn text-warning" id="button" onclick="toggleRegistration()">Click For Online Registration</button>
-                    </a>                    
+                    </a> <br><br>
+                    <a href="#reg"><button class="btn text-warning" id="button" onclick="toggleRegistration1()">Download Application Copy</button>
+                    </a> <br><br>
+                    <h4>Scholarships-2023 Basic Info</h4>                    
                 </div>
 
             </div>
@@ -85,7 +85,9 @@ Sincerely, <br>
     <div class="container">
         <div id="reg" style="display: none;">
             <h1>নিম্নের ফরমটি সঠিক ভাবে পূরণ করুন</h1>
-              
+            <div class="fCode">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfA3teYWzQ6popDyl4bfjRn5UKUBOOVQgjbJXNUKCG665PDVA/viewform?embedded=true" width="640" height="3490" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+            </div>
         </div>
     </div>
 
