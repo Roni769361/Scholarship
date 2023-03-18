@@ -7,10 +7,7 @@ body {
     background-color: rgb(177, 209, 238);
     color: #333;
   }
-.navbar-brand img{
 
-
-}
 
 .navbar{
     background-color: rgba(9, 123, 238, 0.842) !important;
@@ -28,7 +25,7 @@ body {
     margin: 2px;
 }
 #introPart{
-    margin-top: 60px;
+    margin-top: 80px;
 }
 .SchoolNameAndAddress, h1{
     line-height: normal;
