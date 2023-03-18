@@ -13,7 +13,7 @@
     <div id="navBar">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">School Logo</a>
+                  <a class="navbar-brand" href="#"><img src="image/logo.png" style="width: 50px; height: 50px;" alt=""></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -23,13 +23,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Individual Data Search</a>
+                        <a class="nav-link" href="https://script.google.com/macros/s/AKfycbyg2b5AZLvYF8XMu1AEIgEONeODdha902PbUWVqHGHgY4e6-9huErk548dxdQ3uxfXw-w/exec" target="_blank"">Individual Data Search</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="https://script.google.com/macros/s/AKfycbxH1KuPGA0V0urGAfoXDxGoTRemnxlRv3hakyFfhMDkP9xfeK2dsZIiIbQkj5rFVvoBbw/exec" target="_blank">Student Id</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">All Data Show</a>
@@ -45,8 +45,14 @@
     <div id="introPart">
         <div class="container">
             <div class="SchoolNameAndAddress">
-                <h1>School Name</h1>
+                <h1>Chakaria Korak Biddyapith</h1>
                 <address>Chakaria, Cox's Bazar</address>
+                
+                <div style="text-align: center;" class="countdown">
+                  <h2>Registration Time:</h2>
+                  <div style="color: rgb(187, 255, 0); font-size: 30px; font-family: 'Courier New', Courier, monospace" id="timer"></div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -57,7 +63,7 @@
             <div class="column row">
                 <h1 style="text-align: center; border-bottom: 2px double black;">Scholarships-2023</h1>
                 <div class="col">
-                    <img class="d-inline" src="image/no-image-available-icon-vector.jpg" width="100" height="100" alt="">
+                    <img class="d-inline" src="image/HM.jpg" width="100" height="100" alt="">
                     <h3 class="d-inline">Head Teacher</h3>
                     <div class="text">
                         <p> <br>
@@ -68,7 +74,7 @@ I would also like to take this opportunity to thank the teachers who have worked
 Once again, congratulations to all the students who have been awarded the government scholarships. I wish you all the very best as you continue your academic journey. <br>
 <br>
 Sincerely, <br>
-[Head Teacher's Name]
+Nurul Akher
                         </p>
                     </div>
                 </div>
@@ -78,9 +84,10 @@ Sincerely, <br>
                     </a> <br><br>
                     <a class="nav-link" style="background-color: red !important; font-size: 20px;" href="https://script.google.com/macros/s/AKfycbxH1KuPGA0V0urGAfoXDxGoTRemnxlRv3hakyFfhMDkP9xfeK2dsZIiIbQkj5rFVvoBbw/exec" target="_blank">Find Student Id</a>
                   </a> <br><br>
-                    <a href=""><button class="btn text-warning" id="button" onclick="toggleRegistration1()">Download Application Copy</button>
+                    <a href="https://script.google.com/macros/s/AKfycbyg2b5AZLvYF8XMu1AEIgEONeODdha902PbUWVqHGHgY4e6-9huErk548dxdQ3uxfXw-w/exec" target="_blank"><button class="btn text-warning" id="button" onclick="toggleRegistration1()">Download Application Copy</button>
                     </a> <br><br>
                     <h4>Scholarships-2023 Basic Info</h4> 
+                    <p style="color: red; font-size: x-large;" id="datetime"></p>
                     <div class="report">
                       <div class="iframe-wrapper">
                         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8Qk98WeJPtYDjVQalKwtWQZ8wBKqJUVP_f6uCKHZ_HzhGryds16FjmBZLstApnEPZH3i5LGWb6Uks/pubhtml?gid=1956772839&amp;single=true&amp;widget=true&amp;headers=false"></iframe>></iframe>
@@ -101,13 +108,116 @@ Sincerely, <br>
         </div>
     </div>
 
+    <section id="contact" class="bg-light">
+      <div class="container py-5">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card card1">
+              <!-- <img src="image/no-image-available-icon-vector.jpg" width="100" height="100" class="card-img-top" alt="..."> -->
+              <div class="card-body">
+                <h5 class="card-title">Nurul Akher</h5>
+                <p class="card-text">Head Teacher <br> Chakaria Korak Biddyapith</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-telephone me-3"></i><a href="tel:+8801817777630">+8801817777630</a></li>
+                  <li><i class="bi bi-envelope me-3"></i><a href="mailto:nakher00@gmail.com">nakher00@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card card2">
+              <!-- <img src="image/no-image-available-icon-vector.jpg" width="100" height="100" class="card-img-top" alt="..."> -->
+              <div class="card-body">
+                <h5 class="card-title">Roni Kanti Nath</h5>
+                <p class="card-text">Assistant Teacher (ICT) <br> Chakaria Korak Biddyapith</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-telephone me-3"></i><a href="tel:+8801864769361">+8801864769361</a></li>
+                  <li><i class="bi bi-envelope me-3"></i><a href="mailto:ronictg9361@gmail.com">ronictg9361@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 Chakaria Korak Biddyapith. All rights reserved.</p>
+          </div>
+          <div class="col-md-6">
+            Development by: Roni Kanti Nath- Assistant Teacher (ICT)
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+
+
+
+    <script>
+      function updateDateTime() {
+        // Get the current date and time
+        var today = new Date();
+    
+        // Format the date and time as a string
+        var date = today.toLocaleDateString();
+        var time = today.toLocaleTimeString();
+    
+        // Display the date and time on the page
+        document.getElementById("datetime").innerHTML = date + " " + time;
+      }
+    
+      // Update the date and time every second
+      setInterval(updateDateTime, 1000);
+    </script>
+    
+
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date().getTime() + 3 * 24 * 60 * 60 * 1000;
+  
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+  
+        // Get today's date and time
+        var now = new Date().getTime();
+  
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+  
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+        // Output the result in an element with id="timer"
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+  
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 
+
+    
 
 
 </body>

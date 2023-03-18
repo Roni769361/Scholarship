@@ -22,3 +22,4 @@ function toggleRegistration() {
 
 var button = document.getElementById("button");
 button.classList.add("animated");
+

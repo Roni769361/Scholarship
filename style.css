@@ -7,7 +7,10 @@ body {
     background-color: rgb(177, 209, 238);
     color: #333;
   }
-  
+.navbar-brand img{
+
+
+}
 
 .navbar{
     background-color: rgba(9, 123, 238, 0.842) !important;
@@ -121,3 +124,95 @@ body {
     border: 0;
   }
   
+
+#contact{
+  background-color: rgb(177, 209, 238) !important;
+  margin: 10px;
+}
+
+
+/* adjust font sizes and spacing for smaller screens */
+@media (max-width: 576px) {
+  .card-title, .card-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* center the contact cards horizontally on larger screens */
+@media (min-width: 992px) {
+  .card1 {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* add padding to the contact cards */
+.card {
+  padding: 1rem;
+}
+
+/* add spacing between the contact cards */
+.card + .card {
+  margin-top: 1rem;
+}
+
+/* adjust the font size and spacing of the contact details */
+.card ul li {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+/* add padding to the container */
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* define the keyframes */
+@keyframes change-color {
+  0% {
+    background-color: #ff7f50; /* coral */
+  }
+  25% {
+    background-color: #6495ed; /* cornflower blue */
+  }
+  50% {
+    background-color: #ffa07a; /* light salmon */
+  }
+  75% {
+    background-color: #87cefa; /* light sky blue */
+  }
+  100% {
+    background-color: #ff7f50; /* coral */
+  }
+}
+
+/* apply the animation to the card1 class */
+.card1 {
+  animation: change-color 10s ease-in-out infinite;
+}
+
+/* define the keyframes */
+@keyframes change-color-2 {
+  0% {
+    background-color: #6495ed; /* cornflower blue */
+  }
+  25% {
+    background-color: #ff7f50; /* coral */
+  }
+  50% {
+    background-color: #87cefa; /* light sky blue */
+  }
+  75% {
+    background-color: #ffa07a; /* light salmon */
+  }
+  100% {
+    background-color: #6495ed; /* cornflower blue */
+  }
+}
+
+/* apply the animation to the card2 class */
+.card2 {
+  animation: change-color-2 12s ease-in-out infinite;
+}
