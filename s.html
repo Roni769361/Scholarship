@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page Reload Popup Example</title>
-    <script type="text/javascript">
-		window.onload = function() {
-		  alert("Your message here!");
-		};
-	</script>
+	<title>Pop-up Message Example</title>
+	<style>
+		.popup {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			z-index: 9999;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.5s ease-in-out;
+		}
+		.popup.show {
+			opacity: 1;
+			visibility: visible;
+		}
+		.popup img {
+			max-width: 30%;
+			max-height: 30%;
+            border-radius: 50%;
+		}
+		.popup .close-button {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			color: white;
+			font-size: 24px;
+			cursor: pointer;
+			z-index: 1;
+		}
+		.popup .message {
+			color: white;
+			text-align: center;
+			margin: 20px;
+			font-size: 20px;
+		}
+		.popup .link {
+			color: white;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+        .close-button {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			color: white;
+			font-size: 40px;
+			cursor: pointer;
+			z-index: 1;
+			transition: transform 0.3s ease-out;
+			/* background-color: yellow; */
+  
+            
+			padding: 10px;
+			border-radius: 50%;
+            border: 2px solid rgb(255, 17, 0);
+		}
+		.close-button:hover {
+			transform: rotate(380deg);
+		}
+	</style>
 </head>
-<body>
-	<!-- Your HTML code here -->
+<body onload="showPopup()">
+	<div class="popup" id="popup">
+		<span class="close-button" onclick="hidePopup()">&times; <h5>Close</h5></span>
+		<img src="image/congrats-1.gif" alt="Example Image">
+		<div class="message">
+			<p>প্রিয় শিক্ষার্থী, <br> সরকারি বৃত্তির জন্য রেজিষ্ঠ্রেশন করে নিম্নের লিংক এ ক্লিক করে কভার পেইজ সংগ্রহ করে প্রয়োজনীয় কাগজ বিদ্যালয় অফিস কক্ষে অবশ্যই জমা দিতে হবে।</p>
+			<p><a class="link" href="#">Cover Page</a></p>
+		</div>
+	</div>
+	<script>
+		function showPopup() {
+			document.getElementById("popup").classList.add("show");
+		}
+		function hidePopup() {
+			document.getElementById("popup").classList.remove("show");
+		}
+	</script>
 </body>
 </html>

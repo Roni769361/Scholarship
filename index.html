@@ -7,17 +7,28 @@
     <title>Scholarship_Data_Ckb</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
-    <script type="text/javascript">
-      window.onload = function() {
-        alert("Your message here!");
-      };
+    
+    <script>
+      function showPopup() {
+        document.getElementById("popup").classList.add("show");
+      }
+      function hidePopup() {
+        document.getElementById("popup").classList.remove("show");
+      }
     </script>
 
 </head>
-<body>
+<body onload="showPopup()">
 
-  
+  <div class="popup" id="popup">
+		<span class="close-button" onclick="hidePopup()">&times; <h5>Close</h5></span>
+		<img src="image/congrats-1.gif" alt="Example Image">
+		<div class="message">
+			<p>প্রিয় শিক্ষার্থী, <br> সরকারি বৃত্তির জন্য রেজিষ্ঠ্রেশন করে নিম্নের লিংক এ ক্লিক করে কভার পেইজ সংগ্রহ করে প্রয়োজনীয় কাগজ বিদ্যালয় অফিস কক্ষে অবশ্যই জমা দিতে হবে।</p>
+			<p><a class="link" href="#">Cover Page</a></p>
+		</div>
+	</div>
+
   <div class="container-fluid">
     <div id="navBar">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
