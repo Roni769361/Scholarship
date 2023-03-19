@@ -94,7 +94,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 400%;
+    border: 2px solid green;
+  }
+  
+  @media (max-width: 576px) {
+    .fCode iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 850%;
+      border: 2px solid rgb(247, 10, 21);
+    }
   }
   
 
@@ -125,8 +137,16 @@ body {
 #contact{
   background-color: rgb(177, 209, 238) !important;
   margin: 10px;
+  margin-top: 1900px;
 }
 
+@media (max-width: 576px) {
+  #contact {
+    background-color: rgb(177, 209, 238) !important;
+    margin: 10px;
+    margin-top: 2200px;
+  }
+}
 
 /* adjust font sizes and spacing for smaller screens */
 @media (max-width: 576px) {
@@ -141,6 +161,7 @@ body {
   .card1 {
     margin-right: auto;
     margin-left: auto;
+  
   }
 }
 
@@ -213,3 +234,4 @@ body {
 .card2 {
   animation: change-color-2 12s ease-in-out infinite;
 }
+
