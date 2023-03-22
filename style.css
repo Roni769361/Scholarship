@@ -300,3 +300,53 @@ body {
 .close-button:hover {
   transform: rotate(380deg);
 }
+
+/* countdown time  */
+#countdown {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  background-color: #ca3131bd;
+  padding: 5px;
+  border-radius: 50px;
+  animation: pulse 1s ease-in-out infinite;
+  }
+
+  #countdown span {
+  display: inline-block;
+  min-width: 50px;
+  margin: 0 10px;
+  background-color: #555;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  }
+
+  @keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
+  }
+  @media (max-width: 480px) {
+  #countdown {
+      font-size: 2em;
+      padding: 10px;
+      margin-top: 30px;
+  }
+  
+  #countdown span {
+      min-width: 30px;
+      margin: 0 5px;
+      padding: 5px;
+      font-size: 0.8em;
+  }
+  }
+
