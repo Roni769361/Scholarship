@@ -10,7 +10,7 @@ body {
 
 
 .navbar{
-    background-color: rgba(9, 123, 238, 0.842) !important;
+    background-color: rgb(255 235 205) !important;
     border-radius: 10px; /* Adjust the value to your desired level of rounding */
     position: fixed;
     top: 0;
